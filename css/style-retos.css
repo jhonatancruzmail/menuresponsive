@@ -6,4 +6,20 @@ h1 {
     width: 400px;
     height: 400px;
     margin: 0 auto;
+    border: 1px solid black;
+}
+
+#main-retos .objeto1,
+#main-retos .objeto2 {
+    width: 200px;
+    height: 200px;
+
+}
+
+#main-retos .objeto1 {
+    background: steelblue;
+}
+
+#main-retos .objeto2 {
+    background: seagreen;
 }
