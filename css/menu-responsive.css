@@ -1,0 +1,8 @@
+body{
+    background: tomato;
+}
+span{
+    font-size: 1em;
+    background: violet;
+    color: rgb(182, 139, 139);
+}
