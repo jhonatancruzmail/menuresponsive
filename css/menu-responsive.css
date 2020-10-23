@@ -1,8 +1,76 @@
-body{
-    background: tomato;
+*{
+    padding: 0;
+    margin: 0;
 }
-span{
-    font-size: 1em;
-    background: violet;
-    color: rgb(182, 139, 139);
+body{
+    background: #ffffff;
+}
+header{
+    width: 100%;
+}
+header nav{
+    background: rgb(222,1,8);
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+.titulo{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+h1{
+    text-align: left;
+    display: block;
+    color: white;
+}
+header nav ul{
+    list-style: none;
+    text-align: right;
+}
+header nav ul li{
+    display: inline-block;
+    transition: .3s;
+    position: relative;
+}
+header nav ul li:hover {
+    background: rgb(191,0,0);
+    transition: .3s;
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+header nav ul li .children{
+    display: none;
+    text-align: left;
+    position: absolute;
+    z-index: 20;
+    background:  rgb(222,1,8);
+}
+header nav ul li:hover .children{
+    display: block;
+}
+.main-content{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+@media screen and (max-width:830px){
+    header nav{
+        position: fixed;
+        left: 0;
+        width: 80%;
+        height: calc(100%-80px);
+        background: rgb(255, 0, 0);
+    }
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li a{
+        display: block;
+        color: black;
+    }
 }
