@@ -12,3 +12,26 @@ h1{
 img{
     width: 300px;
 }
+.margen-botones{
+    margin: 5px;
+}
+span.big-font{
+    font-size: 1em;
+    float: right;
+}
+.insignias{
+    width: 25%;
+    float: left;
+}
+p{
+    clear: both
+}
+.inline-space{
+    line-height: 2em;
+}
+h2{
+    clear: both;
+}
+.alineacion-lista{
+    float: right;
+}

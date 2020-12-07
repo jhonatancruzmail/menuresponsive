@@ -1,9 +1,10 @@
 h1{
     text-align: center;  
-    color: #922634;  
+    color: #ffffff;  
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: black;
 }
 nav ul{
     list-style: none;
@@ -16,14 +17,14 @@ nav li{
 }
 nav a{
     text-decoration: none;
-    color: #ddd;
+    color: rgb(255, 255, 255);
     padding: 0 2.5em;
     display: block;
-    transition: .5s;
+    transition: .2s;
 }
 .menu{
     width: 100%;
-    background: #2B7692;
+    background: #ff0000;
     display: table;
 }
 .menu ul{
@@ -34,12 +35,13 @@ nav a{
     width: 180px;
 }
 nav a:hover{
-    background:#B3B3B3;
-    transition: .50s;
+    background:#ffffff;
+    color: black;
+    transition: .4s;
 }
 /*Segundo Nivel*/
 nav li li{
-    background-color: #306B80;
+    background-color: #e93232;
     font-size: .9em;
     text-align: center;
     width: 180px;
