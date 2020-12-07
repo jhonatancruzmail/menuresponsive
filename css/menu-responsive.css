@@ -1,159 +1,145 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    background: #fefefe;
-}
-.menu-bar{
-    display: none;
-}
-.titulo{
-    position: absolute;
-    top: 13px;
-    left: 20px;
-}
-h1{
+h1 {
     text-align: left;
     display: block;
     color: white;
 }
-header{
+.titulo {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+.menu-bar {
+    display: none;
+}
+body {
+    background: #fefefe;
+}
+header {
     width: 100%;
 }
-header nav{
-    background: rgb(222,1,8);
+header nav {
+    background-color: #ff2424;
     width: 100%;
     margin: 0 auto;
     z-index: 10;
 }
-header nav ul{
+header nav ul {
     list-style: none;
     text-align: right;
 }
-header nav ul li{
+header nav ul li {
     display: inline-block;
     position: relative;
 }
-header nav ul li a{
+header nav ul li a {
     color: white;
     display: block;
     text-decoration: none;
     padding: 20px;
 }
-header nav ul li span{
+header nav ul li a span {
     margin-right: 10px;
 }
-/* header nav ul li:hover {
-    background: rgb(191,0,0);
-    transition: .3s;
 
-} */
-header nav ul li .children{
+header nav ul li .children {
     display: none;
     width: 150%;
-    background: black;
+    background: rgb(230,230,230);
     position: absolute;
     text-align: left;
 }
-/* header nav ul li:hover .children{
-    display: block;
-    width: 100%;
-    text-align: left;
-    z-index: 20;  
-} */
-/* header nav ul li:hover .children li{
-    width: 100%;
-} */
-header nav ul li .children li{
-    display: block;
-    border: 1px solid black;
+header nav ul li .children li a:hover{
+    background-color:#ff2424;
 }
-header nav ul li .children li a{
+header nav ul li .children li {
     display: block;
-    background: black;
+    border: 1px solid rgba(255,255,255,.5);
 }
-.main-content{
-    padding: 2rem;
-    font-size: 1.5rem;
+header nav ul li .children li a {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.952);
+    
+};
+.main-content {
+    margin: 2em;
     text-align: justify;
 }
-@media screen and (max-width:768px){
-    body{
-        padding-top: 69px;
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 69px; 
     }
-    .titulo{
+    .titulo {
         display: none;
     }
-
-    .icon-list{
-        width: 50px;
-        height: 50px;
-        background: black;
-    }
-    .menu-bar{
+    .menu-bar {
         display: block;
         width: 100%;
         position: fixed;
         top: 0;
-        background: rgb(222,1,8);
+        background-color: #ff2424;
     }
-    .menu-bar .bt-menu{
+    .menu-bar .bt-menu {
         display: block;
         padding: 20px;
-        color: white;
+        color: #fff;
         font-size: 25px;
         font-weight: 900;
         text-decoration: none;
     }
-    .menu-bar span{
+    .menu-bar span {
         float: right;
         font-size: 38px;
-
     }
-    header nav{
-        width: 100%;
-        /* width: 80%; */
+    header nav {
+        width: 80%;
         position: fixed;
-        right: 0;
-        height: calc(100%-80px);
-        background: rgb(255, 0, 0);
+        right: 100%;
+        height: calc(100% - 80px);
+        background: rgb(230,230,230);
         margin: 0;
+        overflow: scroll;
     }
-    header nav ul li{
+    header nav ul li {
         display: block;
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgba(255,255,255,.5);
     }
-    header nav ul li:hover{
+    header nav ul li:hover {
         background: white;
     }
-    header nav ul li a{
+    header nav ul li a {
+        padding: 12px;
         display: block;
-        color: black;
         text-align: left;
-        color: rgb(0, 0, 0);
+        color: rgb(64,64,64);
     }
-    header nav ul li a:hover{
-        color: white;
-
-    }
-    header nav ul li .children{
-        width: 100%;
+    header nav ul li a:hover {
+        padding: 12px;
         background: white;
+        color: black;
+    }
+    header nav ul li .children {
+        width: 100%;
+        background: gainsboro;
         color: white;
         position: relative;
     }
-    header nav ul li .children a{
-        padding-left: 20px;
+    header nav ul li .children a {
+        margin-left: 20px;
     }
-    
-    header nav ul li .icon-chevron-small-down{
+    header nav ul li .children a:hover{
+        color: white;
+    }
+    header nav ul li .fa-angle-double-down {
         float: right;
         top: 3px;
-        margin-left: 1px;
+        margin-left: 10px;
         margin-right: 0;
     }
-    .main-content{
+    .main-content {
         margin: 2em;
         text-align: justify;
     }
